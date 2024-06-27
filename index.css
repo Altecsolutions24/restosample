@@ -1,0 +1,224 @@
+body {
+  background-color: #C85B0D;
+  cursor: url("/images/spoon3.svg")64 64, auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -1;
+}
+
+
+.main_cotaniner{
+    margin-top: 100px;
+}
+
+.main_cotaniner h1{
+    color: #FFFFFF;
+    font-size: 8.9vw;
+    font-weight: 500;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style:normal;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 1);
+    animation: customAni 6s ease 0s infinite normal none;
+}
+
+@keyframes customAni {
+  0%,
+  100% {
+	transform: rotate(0deg);
+	transform-origin: 50% 100%;
+  }
+
+  10% {
+	transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+	transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+	transform: rotate(4deg);
+  }
+
+  80% {
+	transform: rotate(-2deg);
+  }
+
+  90% {
+	transform: rotate(2deg);
+  }
+}
+
+.main_cotaniner h3{
+    color: #FFFFFF;
+    font-size: 2.9vw;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    font-style:normal;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 1);
+    animation: customAni2 4s ease-in 0s infinite normal none;
+}
+@keyframes customAni2 {
+  0%,
+  50%,
+  100% {
+	opacity: 1;
+  }
+
+  25%,
+  75% {
+	opacity: 0;
+  }
+}
+
+nav{
+    margin-left: 25px;
+    font-family: "PT Sans", sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 2.0vw;
+    text-shadow: 1px 5px 15px rgba(0, 0, 0, 1);
+}
+
+.playmusic{
+  margin-right: 10px;
+  border-radius: 20px;
+  filter: drop-shadow(-13px 2px 48px #000000);
+  background: rgb(223,224,174);
+  background: radial-gradient(circle, rgba(223,224,174,1) 6%, rgba(187,187,166,1) 100%);
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+.button-detail {
+    margin-right: 1rem; /* Adjust the spacing between the text and button */
+    font-size: 0.875rem; /* Adjust the font size as needed */
+    color: #ffffff; /* Adjust the text color as needed */
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+  }
+
+.btn_1{
+    border-radius: 28px;
+    width: 3.0vw;    
+    max-width: 100%;
+    background-color: #DED3B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.btn_1 i{
+    font-size: 4rem;
+}
+
+@media (max-width: 767px) {
+    .btn_1 {
+      padding: 2.75rem; /* Adjust the padding for smaller screens */
+      margin-bottom: 40px;
+    }
+  
+    .btn_1 i {
+      font-size: 2.25rem; /* Adjust the icon size for smaller screens */
+    }
+
+
+  }
+
+
+/* images */
+
+
+
+.container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px; /* Adjust the gap value to control the space between images */
+  padding: 50px; /* Add some padding to the container */
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .carousel-images {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carousel-images img {
+    flex-shrink: 0;
+    margin: 0 5px;
+  }
+}
+
+.damenu{
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.orderhere{
+  color: #FFFFFF;
+  font-size: 8.9vw;
+  font-weight: 500;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-style:normal;
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 1);
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform:scale(250px);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.animate-plate {
+  animation: plate-transition 1s ease-in-out forwards;
+}
+
+@keyframes plate-transition {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(100vw - 400px), calc(100vh - 400px));
+  }
+}
+
